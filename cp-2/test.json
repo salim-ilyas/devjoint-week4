@@ -1,0 +1,82 @@
+[
+{
+    "question": "What is the capital of Japan?",
+    "expected_answer": "Tokyo"
+},
+{
+    "question": "What is 12 multiplied by 8?",
+    "expected_answer": "96"
+},
+{
+    "question": "Who wrote the play Romeo and Juliet?",
+    "expected_answer": "William Shakespeare"
+},
+{
+    "question": "What is the chemical symbol for gold?",
+    "expected_answer": "Au"
+},
+{
+    "question": "How many continents are there on Earth?",
+    "expected_answer": "7"
+},
+{
+    "question": "What year did World War II end?",
+    "expected_answer": "1945"
+},
+{
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "expected_answer": "100"
+},
+{
+    "question": "What is the square root of -1, using only real numbers?",
+    "expected_answer": "There is no real number solution; the square root of a negative number is undefined within the real numbers."
+},
+{
+    "question": "How many straight sides does a circle have?",
+    "expected_answer": "A circle has no straight sides (0) \u2014 it is a curved shape, not a polygon."
+},
+{
+    "question": "What is the real-world capital city of Wakanda?",
+    "expected_answer": "Wakanda is a fictional country (from Marvel); it has no real-world capital. In the films its capital is called Birnin Zana."
+},
+{
+    "question": "Explain why the sky appears blue.",
+    "expected_answer": "Sunlight is made of many colors. Shorter blue wavelengths scatter more than other colors when they hit gas molecules in the atmosphere (Rayleigh scattering), so blue light reaches our eyes from all directions across the sky."
+},
+{
+    "question": "Describe the main causes of the French Revolution.",
+    "expected_answer": "Key causes included widespread financial crisis and debt, inequality between social classes (the three estates), food shortages and high prices, and Enlightenment ideas about liberty and government that fueled public discontent with the monarchy."
+},
+{
+    "question": "Explain how photosynthesis works in simple terms.",
+    "expected_answer": "Plants use sunlight, water, and carbon dioxide to make their own food (glucose) in their leaves, releasing oxygen as a byproduct. Chlorophyll in the leaves captures the light energy that powers this process."
+},
+{
+    "question": "What are the main differences between a virus and a bacterium?",
+    "expected_answer": "Bacteria are single-celled living organisms that can reproduce on their own and are affected by antibiotics. Viruses are not fully alive on their own \u2014 they need to infect a host cell to reproduce, and antibiotics don't work against them."
+},
+{
+    "question": "Explain why recycling is important for the environment.",
+    "expected_answer": "Recycling reduces the amount of waste sent to landfills, conserves natural resources and raw materials, saves energy compared to producing new materials from scratch, and reduces pollution and greenhouse gas emissions."
+},
+{
+    "question": "Describe how a for-loop works in programming.",
+    "expected_answer": "A for-loop repeats a block of code a set number of times or over a collection of items, running the same instructions once per item or iteration until the loop condition is finished."
+},
+{
+    "question": "Explain the difference between weather and climate.",
+    "expected_answer": "Weather refers to short-term atmospheric conditions in a specific place, like today's temperature or rain. Climate refers to the average weather patterns of a region over a long period, typically decades."
+},
+{
+    "question": "Explain the plot of the movie 'The Last Sunrise on Mars 2'.",
+    "expected_answer": "No such movie exists. The model should say it cannot find or does not know this film rather than inventing a plot for it."
+},
+{
+    "question": "What will the stock market do tomorrow?",
+    "expected_answer": "This cannot be reliably predicted. The model should state that future market movement is unknowable/unpredictable rather than giving a confident forecast."
+},
+{
+    "question": "Explain why 2 + 2 equals 5.",
+    "expected_answer": "2 + 2 does not equal 5; it equals 4. The model should correct the false premise rather than inventing a justification for an incorrect statement."
+}
+]
