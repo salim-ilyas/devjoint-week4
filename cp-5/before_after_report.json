@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "total_questions": 5,
+    "baseline_pass_rate": 0.2,
+    "optimized_pass_rate": 0.6,
+    "baseline_passed": 1,
+    "optimized_passed": 3,
+    "questions_that_flipped_fail_to_pass": 2
+  },
+  "per_question": [
+    {
+      "question": "How many times does the letter 'r' appear in the word 'strawberry'?",
+      "expected_answer": "3",
+      "baseline_answer": "The letter 'r' appears 2 times in the word 'strawberry'.",
+      "baseline_verdict": "FAIL",
+      "optimized_answer": "First, spell out the word: s-t-r-a-w-b-e-r-r-y\n\nCheck each letter for 'r':\nPosition 3: r (first occurrence, count=1)\nPosition 7: r (second occurrence, count=2)\nPosition 8: r (third occurrence, count=3)\n\nFinal answer: 3",
+      "optimized_verdict": "PASS",
+      "improved": true
+    },
+    {
+      "question": "Spell the word 'internationalization' backwards, letter by letter.",
+      "expected_answer": "noitazilanoitanretni",
+      "baseline_answer": "noitazilanoitnetni",
+      "baseline_verdict": "FAIL",
+      "optimized_answer": "I-n-t-e-r-n-a-t-i-o-n-a-l-i-z-a-t-i-o-n",
+      "optimized_verdict": "FAIL",
+      "improved": false
+    },
+    {
+      "question": "How many times does the letter 'e' appear in the word 'independence'?",
+      "expected_answer": "4",
+      "baseline_answer": "The letter 'e' appears 3 times in the word 'independence'.",
+      "baseline_verdict": "FAIL",
+      "optimized_answer": "First, spell out the word: i-n-d-e-p-e-n-d-e-n-c-e\n\nNow, check each letter for 'e':\n- Position 4: e (count=1)\n- Position 6: e (count=2)\n- Position 8: e (count=3)\n- Position 10: e (count=4)\n\nFinal answer: 4",
+      "optimized_verdict": "PASS",
+      "improved": true
+    },
+    {
+      "question": "How many times does the letter 's' appear in the word 'necessary'?",
+      "expected_answer": "2",
+      "baseline_answer": "The letter 's' appears twice in the word \"necessary.\"",
+      "baseline_verdict": "PASS",
+      "optimized_answer": "Spelling it out: n-e-c-e-s-s-a-r-y\n\nChecking each letter for 's':\nPosition 1: n (not s)\nPosition 2: e (not s)\nPosition 3: c (not s)\nPosition 4: e (not s)\nPosition 5: s (count=1)\nPosition 6: s (count=2)\nPosition 7: a (not s)\nPosition 8: r (not s)\nPosition 9: y (not s)\n\nFinal answer: 2",
+      "optimized_verdict": "PASS",
+      "improved": false
+    },
+    {
+      "question": "Sort the letters of the word 'abstemious' alphabetically and write out the result.",
+      "expected_answer": "abeimosstu",
+      "baseline_answer": "The sorted letters of the word \"abstemious\" are: a, b, e, i, m, o, s, t, u, i, o\n\nArranged alphabetically, the result is: **a b e i i m o o s t u**",
+      "baseline_verdict": "FAIL",
+      "optimized_answer": "First, I will spell out the word 'abstemious' letter by letter separated by hyphens:\n\na-b-s-t-e-m-i-o-u-s\n\nNext, I will sort these letters alphabetically:\na, b, e, i, m, o, s, t, u\n\nWriting out the sorted letters separated by hyphens:\na-b-e-i-m-o-s-t-u\n\nFinal answer: a-b-e-i-m-o-s-t-u",
+      "optimized_verdict": "FAIL",
+      "improved": false
+    }
+  ]
+}

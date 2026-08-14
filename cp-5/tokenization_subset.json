@@ -1,0 +1,22 @@
+[
+{
+    "question": "How many times does the letter 'r' appear in the word 'strawberry'?",
+    "expected_answer": "3"
+},
+{
+    "question": "Spell the word 'internationalization' backwards, letter by letter.",
+    "expected_answer": "noitazilanoitanretni"
+},
+{
+    "question": "How many times does the letter 'e' appear in the word 'independence'?",
+    "expected_answer": "4"
+},
+{
+    "question": "How many times does the letter 's' appear in the word 'necessary'?",
+    "expected_answer": "2"
+},
+{
+    "question": "Sort the letters of the word 'abstemious' alphabetically and write out the result.",
+    "expected_answer": "abeimosstu"
+}
+]
