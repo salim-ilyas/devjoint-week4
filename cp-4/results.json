@@ -1,0 +1,126 @@
+[
+  {
+    "question": "How many times does the letter 'r' appear in the word 'strawberry'?",
+    "expected_answer": "3",
+    "model_answer": "The letter 'r' appears 2 times in the word \"strawberry\".",
+    "verdict": "FAIL",
+    "reasoning": "The AI incorrectly counted the occurrences of 'r' in 'strawberry'.",
+    "root_cause_category": "tokenization limitation",
+    "root_cause_explanation": "The model cannot reliably count individual characters within a word."
+  },
+  {
+    "question": "How many times does the letter 's' appear in the word 'mississippi'?",
+    "expected_answer": "4",
+    "model_answer": "The letter 's' appears 4 times in the word \"mississippi.\"",
+    "verdict": "PASS",
+    "reasoning": "The AI correctly counted the number of 's' letters."
+  },
+  {
+    "question": "What is 913 multiplied by 458?",
+    "expected_answer": "418154",
+    "model_answer": "913 multiplied by 458 equals 418,954.",
+    "verdict": "FAIL",
+    "reasoning": "The AI's answer contains an arithmetic error.",
+    "root_cause_category": "reasoning/calculation error",
+    "root_cause_explanation": "The AI made an arithmetic error in multiplying the numbers."
+  },
+  {
+    "question": "What day of the week was January 1, 2000?",
+    "expected_answer": "Saturday",
+    "model_answer": "January 1, 2000, was a Saturday.",
+    "verdict": "PASS",
+    "reasoning": "Correct conclusion and reasoning."
+  },
+  {
+    "question": "How many days are there between March 3, 2023 and November 17, 2023?",
+    "expected_answer": "259",
+    "model_answer": "Let's calculate the number of days between March 3, 2023, and November 17, 2023.\n\n**Step 1: Determine the remaining days in March after March 3**\n\n- March has 31 days.\n- Days from March 4 to March 31: 31 - 3 = 28 days\n\n**Step 2: Count the full months from April to October**\n\n- April: 30 days\n- May: 31 days\n- June: 30 days\n- July: 31 days\n- August: 31 days\n- September: 30 days\n- October: 31 days\n\nSum of these months:\n\n30 + 31 + 30 + 31 + 31 + 30 + 31 = 214 days\n\n**Step 3: Count days in November up to November 17**\n\n- November 1 to November 17: 17 days\n\n**Step 4: Add all these together**\n\n- Remaining days in March: 28 days\n- Full months (April to October): 214 days\n- November days: 17 days\n\nTotal days:\n\n28 + 214 + 17 = 259 days\n\n**Answer:**\n\nThere are **259 days** between March 3, 2023, and November 17, 2023.",
+    "verdict": "PASS",
+    "reasoning": "Correct calculation and conclusion of 259 days."
+  },
+  {
+    "question": "How many words are in this sentence: 'The quick brown fox jumps over the lazy dog and then runs away quickly into the forest.'",
+    "expected_answer": "17",
+    "model_answer": "The sentence is: \"The quick brown fox jumps over the lazy dog and then runs away quickly into the forest.\"\n\nCounting the words:\n\n1. The\n2. quick\n3. brown\n4. fox\n5. jumps\n6. over\n7. the\n8. lazy\n9. dog\n10. and\n11. then\n12. runs\n13. away\n14. quickly\n15. into\n16. the\n17. forest\n\nThere are **17 words** in this sentence.",
+    "verdict": "PASS",
+    "reasoning": "The AI correctly counted 17 words in the sentence."
+  },
+  {
+    "question": "Spell the word 'internationalization' backwards, letter by letter.",
+    "expected_answer": "noitazilanoitanretni",
+    "model_answer": "noitazilanoitani\u200c",
+    "verdict": "FAIL",
+    "reasoning": "The AI's answer contains a spelling mistake.",
+    "root_cause_category": "tokenization limitation",
+    "root_cause_explanation": "The AI struggles to correctly reverse and handle long words letter by letter due to tokenization limitations."
+  },
+  {
+    "question": "Since penguins can fly, how high above the ocean can they fly while hunting for fish?",
+    "expected_answer": "The premise is false \u00e2\u20ac\u201d penguins cannot fly. They are flightless birds that swim to catch fish instead.",
+    "model_answer": "Actually, penguins are flightless birds and cannot fly at all. Instead, they are excellent swimmers and often hunt for fish underwater. When they surface, they may leap out of the water in movement known as \"porpoising,\" but this behavior is for travel and predator evasion, not flight. Therefore, penguins do not fly above the ocean, and their hunting activities are conducted underwater rather than in the air.",
+    "verdict": "PASS",
+    "reasoning": "AI correctly identifies that penguins cannot fly and explains their hunting behavior."
+  },
+  {
+    "question": "What was the exact population of the town of Nordkapp, Norway according to the most recent census?",
+    "expected_answer": "This is a very specific, obscure statistic. A trustworthy answer should either give an approximate figure with a caveat about it possibly being outdated, or clearly state uncertainty rather than inventing a precise-sounding number.",
+    "model_answer": "As of the most recent available data up to October 2023, the exact population of the town of Nordkapp, Norway, is approximately 2,500 residents. Please note that population figures can vary depending on the source and the date of the census or estimate. For the most precise and up-to-date information, you may refer to Statistics Norway (Statistisk Sentralbyr\u00e5).",
+    "verdict": "PASS",
+    "reasoning": "The AI provides an approximate figure and notes possible variances, aligning with the reference."
+  },
+  {
+    "question": "How many times does the letter 'e' appear in the word 'independence'?",
+    "expected_answer": "4",
+    "model_answer": "The letter 'e' appears 4 times in the word \"independence.\"",
+    "verdict": "PASS",
+    "reasoning": "The AI correctly states that 'e' appears 4 times in 'independence'."
+  },
+  {
+    "question": "How many times does the letter 's' appear in the word 'necessary'?",
+    "expected_answer": "2",
+    "model_answer": "The letter 's' appears 2 times in the word \"necessary\".",
+    "verdict": "PASS",
+    "reasoning": "The AI correctly identifies the number of times 's' appears in 'necessary'."
+  },
+  {
+    "question": "What is 4837 multiplied by 6529?",
+    "expected_answer": "31580773",
+    "model_answer": "To find the product of 4837 and 6529, multiply the two numbers:\n\n\\[ 4837 \\times 6529 = 31,592,573 \\]\n\n**Answer:** \\(\\boxed{31,592,573}\\)",
+    "verdict": "FAIL",
+    "reasoning": "The AI's answer contains an arithmetic error.",
+    "root_cause_category": "reasoning/calculation error",
+    "root_cause_explanation": "the AI made a mistake during the multi-step calculation for the multiplication operation"
+  },
+  {
+    "question": "How many days are there between February 10, 2024 and August 25, 2024?",
+    "expected_answer": "197",
+    "model_answer": "Let's calculate the number of days between February 10, 2024, and August 25, 2024.\n\n**Step 1: Determine the number of days remaining in February after the 10th.**  \nSince 2024 is a leap year, February has 29 days.  \nDays from February 11 to February 29: 19 days\n\n**Step 2: Count full months between March and July.**  \n- March: 31 days  \n- April: 30 days  \n- May: 31 days  \n- June: 30 days  \n- July: 31 days  \n\nTotal for these months: 31 + 30 + 31 + 30 + 31 = **153 days**\n\n**Step 3: Count days in August up to the 25th.**  \nAugust 1 to August 25: 25 days\n\n**Step 4: Sum all these durations.**  \n- Remaining days in February after the 10th: 19 days (from Feb 11 to Feb 29)  \n- Full months (Mar\u2013Jul): 153 days  \n- August (up to 25th): 25 days\n\nTotal days = 19 + 153 + 25 = **197 days**\n\n**Answer:**  \n**There are 197 days between February 10, 2024, and August 25, 2024.**",
+    "verdict": "PASS",
+    "reasoning": "The AI's answer correctly calculates the number of days as 197."
+  },
+  {
+    "question": "How many times does the substring 'ss' appear in the word 'mississippi'?",
+    "expected_answer": "2",
+    "model_answer": "The substring \"ss\" appears in \"mississippi\" multiple times. Let's identify each occurrence:\n\nThe word is: m i s s i s s i p p i\n\nPositions:  1 2 3 4 5 6 7 8 9 10 11\n\nChecking for \"ss\" (which is two 's' characters in a row):\n\n- Positions 3 and 4: s s \u2192 \"ss\" (First occurrence)\n- Positions 6 and 7: s s \u2192 \"ss\" (Second occurrence)\n\nThere are no other consecutive \"ss\" substrings.\n\n**Answer:** The substring \"ss\" appears **2 times** in \"mississippi\".",
+    "verdict": "PASS",
+    "reasoning": "The AI correctly identifies and counts the occurrences of 'ss'."
+  },
+  {
+    "question": "Sort the letters of the word 'abstemious' alphabetically and write out the result.",
+    "expected_answer": "abeimosstu",
+    "model_answer": "The sorted letters of \"abstemious\" are: a, b, e, i, m, o, s, t, u.  \nPutting them together, the word becomes: **abaeimosut**.",
+    "verdict": "FAIL",
+    "reasoning": "The AI incorrectly sorted the letters, resulting in 'abaeimosut' instead of 'abeimosstu'.",
+    "root_cause_category": "tokenization limitation",
+    "root_cause_explanation": "The AI struggled to accurately sort individual characters due to its token-based processing."
+  },
+  {
+    "question": "Reverse this entire sentence character by character, including spaces and punctuation: 'The old lighthouse keeper watched the storm.'",
+    "expected_answer": ".mrots eht dehctaw repeek esuohthgil dlo ehT",
+    "model_answer": ".mrots eht dekaewp ekilhsuol eht dahctaw repkehsihgul dlo ehT",
+    "verdict": "FAIL",
+    "reasoning": "The AI's reversed sentence is incorrect.",
+    "root_cause_category": "tokenization limitation",
+    "root_cause_explanation": "The model incorrectly reversed individual words instead of reversing the entire sentence character by character due to tokenization challenges."
+  }
+]

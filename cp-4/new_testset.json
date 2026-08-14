@@ -1,0 +1,62 @@
+[
+{
+    "question": "How many times does the letter 'r' appear in the word 'strawberry'?",
+    "expected_answer": "3"
+},
+{
+    "question": "How many times does the letter 's' appear in the word 'mississippi'?",
+    "expected_answer": "4"
+},
+{
+    "question": "What is 913 multiplied by 458?",
+    "expected_answer": "418154"
+},
+{
+    "question": "What day of the week was January 1, 2000?",
+    "expected_answer": "Saturday"
+},
+{
+    "question": "How many days are there between March 3, 2023 and November 17, 2023?",
+    "expected_answer": "259"
+},
+{
+    "question": "How many words are in this sentence: 'The quick brown fox jumps over the lazy dog and then runs away quickly into the forest.'",
+    "expected_answer": "17"
+},
+{
+    "question": "Spell the word 'internationalization' backwards, letter by letter.",
+    "expected_answer": "noitazilanoitanretni"
+},
+{
+    "question": "Since penguins can fly, how high above the ocean can they fly while hunting for fish?",
+    "expected_answer": "The premise is false — penguins cannot fly. They are flightless birds that swim to catch fish instead."
+},
+{
+    "question": "What was the exact population of the town of Nordkapp, Norway according to the most recent census?",
+    "expected_answer": "This is a very specific, obscure statistic. A trustworthy answer should either give an approximate figure with a caveat about it possibly being outdated, or clearly state uncertainty rather than inventing a precise-sounding number."
+},
+{
+    "question": "How many times does the letter 'e' appear in the word 'independence'?",
+    "expected_answer": "4"
+},
+{
+    "question": "How many times does the letter 's' appear in the word 'necessary'?",
+    "expected_answer": "2"
+},
+{
+    "question": "What is 4837 multiplied by 6529?",
+    "expected_answer": "31580773"
+},
+{
+    "question": "How many days are there between February 10, 2024 and August 25, 2024?",
+    "expected_answer": "197"
+},
+{
+    "question": "How many times does the substring 'ss' appear in the word 'mississippi'?",
+    "expected_answer": "2"
+},
+{
+    "question": "Sort the letters of the word 'abstemious' alphabetically and write out the result.",
+    "expected_answer": "abeimosstu"
+}
+]
