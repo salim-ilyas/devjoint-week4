@@ -51,7 +51,6 @@ Respond with ONLY valid JSON in this exact shape, nothing else:
 {"category": "tokenization limitation", "explanation": "one short sentence on specifically why"}
 """
 
-
 def get_model_answer(question):
     response = client.chat.completions.create(
         model=MODEL_UNDER_TEST,

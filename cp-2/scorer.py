@@ -1,18 +1,3 @@
-"""
-scorer.py
------------
-Checkpoint 2: automated scoring using an LLM as judge.
-
-Uses OpenAI's API (switched from Gemini after hitting a quota/rate
-limit error). For each question in test_set.json:
-1. Ask the model under test to answer the question.
-2. Ask a separate judge call to compare that answer against the
-expected_answer and decide PASS/FAIL with a one-line reason.
-
-Run: python scorer.py
-Writes results to results.json
-"""
-
 import os
 import json
 from pathlib import Path
@@ -35,8 +20,7 @@ if not api_key:
 
 client = OpenAI(api_key=api_key)
 
-# Small, cheap model for the one being tested; judge can be the same
-# or a stronger one -- kept as two separate names for that reason.
+# Small, cheap model for the one being tested; stronger one for the judge to avoid bias.
 MODEL_UNDER_TEST = "gpt-4o-mini"
 JUDGE_MODEL = "gpt-4o"
 
@@ -54,7 +38,7 @@ or
 """
 
 
-def get_model_answer(question: str) -> str:
+def get_model_answer(question):
     response = client.chat.completions.create(
         model=MODEL_UNDER_TEST,
         messages=[{"role": "user", "content": question}],
@@ -62,7 +46,7 @@ def get_model_answer(question: str) -> str:
     return response.choices[0].message.content.strip()
 
 
-def judge_answer(question: str, expected_answer: str, model_answer: str) -> dict:
+def judge_answer(question, expected_answer, model_answer):
     prompt = (
         f"Question: {question}\n"
         f"Reference answer: {expected_answer}\n"
